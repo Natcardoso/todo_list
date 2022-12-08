@@ -30,9 +30,10 @@ export const Task = styled.div<PropsTask>`
         overflow-wrap: break-word;
         word-wrap: break-word;
         word-break: break-word;
+        opacity: ${({ checked }) => (checked ? "0.5" : "")};
 
         span:nth-child(1) {
-            padding: 0.5rem;
+            margin: 0.5rem;
             border-radius: 8px;
             width: 100%;
             display: flex;

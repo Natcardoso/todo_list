@@ -8,6 +8,7 @@ import { ListTask } from "../ListTask";
 export type TList = {
     text: string;
     checked: boolean;
+    id: number;
 };
 
 //  { text: "comprar banana", checked: true },
@@ -20,6 +21,7 @@ export const TodoApp = () => {
 
     const handleAddTask = (taskName: string) => {
         let newList = {
+            id: Math.random(),
             text: taskName,
             checked: false,
         };
@@ -55,7 +57,7 @@ export const TodoApp = () => {
                             setList={setList}
                             list={list}
                             item={item}
-                            index={index}
+                            id={index}
                         />
                     ))}
                 </s.ContainerAreaTask>

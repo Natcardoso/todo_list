@@ -21,6 +21,7 @@ export const AddNewTask = ({
         } else {
             return;
         }
+
         setTextInput("");
         setOpenInput(false);
         setActiveListState(true);
@@ -30,13 +31,25 @@ export const AddNewTask = ({
         <s.Container>
             <s.Button
                 type="button"
-                onClick={() => setOpenInput(true)}
                 className={activeList ? "styleButtonActiveList" : ""}
                 id={openInput ? "buttonConfirm" : ""}
             >
-                <div>
-                    <GoPlusSmall size={20} />
-                </div>
+                {openInput ? (
+                    <div
+                        onClick={() => {
+                            onEnter(textInput);
+                            setTextInput("");
+                            setOpenInput(false);
+                            setActiveListState(true);
+                        }}
+                    >
+                        <GoPlusSmall size={20} />
+                    </div>
+                ) : (
+                    <div onClick={() => setOpenInput(true)}>
+                        <GoPlusSmall size={20} />
+                    </div>
+                )}
             </s.Button>
             {openInput && (
                 <s.ContainerInput>
