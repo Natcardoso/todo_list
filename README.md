@@ -19,7 +19,6 @@ Esse projeto foi desenvolvido para as organizações do dia a dia, com listas de
 
 ## Funcionalidades
 
-- Temas dark e light
 - Remove e conclui tarefas
 - Data atual das tarefas
 
