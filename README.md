@@ -3,6 +3,7 @@
 
 Esse projeto foi desenvolvido para as organizações do dia a dia, com listas de afazeres.
 
+https://user-images.githubusercontent.com/88684378/222759660-362044cd-ceaa-4407-bcd0-5ace11babe3e.mp4
 
 ## Screenshots
 
